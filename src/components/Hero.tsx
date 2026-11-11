@@ -4,42 +4,7 @@ import { useLang } from '../i18n'
 import { profile } from '../data/profile'
 import { heroStack } from '../data/skills'
 
-const initials = profile.fullName
-  .split(' ')
-  .map((p) => p[0])
-  .slice(0, 2)
-  .join('')
 
-function CodeCard() {
-  return (
-    <div className="card w-64 p-4 font-mono text-[11px] leading-relaxed shadow-2xl shadow-black/40 backdrop-blur">
-      <div className="mb-3 flex items-center justify-between text-slate-500">
-        <span>developer.ts</span>
-        <span className="flex gap-1.5" aria-hidden>
-          <span className="h-2 w-2 rounded-full bg-red-400/80" />
-          <span className="h-2 w-2 rounded-full bg-yellow-400/80" />
-          <span className="h-2 w-2 rounded-full bg-green-400/80" />
-        </span>
-      </div>
-      <p>
-        <span className="text-blue-400">const</span> <span className="text-slate-200">dev</span> = {'{'}
-      </p>
-      <p className="pl-3">
-        name: <span className="text-emerald-300">'{profile.name}'</span>,
-      </p>
-      <p className="pl-3">
-        stack: [<span className="text-emerald-300">'React'</span>, <span className="text-emerald-300">'Node'</span>,
-      </p>
-      <p className="pl-6">
-        <span className="text-emerald-300">'Java'</span>, <span className="text-emerald-300">'Go'</span>],
-      </p>
-      <p className="pl-3">
-        coffee: <span className="text-orange-300">Infinity</span>,
-      </p>
-      <p>{'}'}</p>
-    </div>
-  )
-}
 
 export function Hero() {
   const { t, lang } = useLang()
