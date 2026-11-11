@@ -103,31 +103,7 @@ export function Hero() {
           </ul>
         </motion.div>
 
-        <motion.div
-          className="relative mx-auto w-full max-w-[16rem] sm:max-w-sm"
-          initial={reduce ? false : { opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, delay: 0.15 }}
-        >
-          <div className="relative aspect-square w-full">
-            <div className="absolute inset-4 rounded-full bg-gradient-to-br from-blue-500 via-blue-700 to-ink-800 opacity-90" />
-            <div className="absolute inset-0 rounded-full border border-blue-400/20" />
-            {profile.photo ? (
-              <img
-                src={profile.photo}
-                alt={profile.fullName}
-                className="absolute inset-4 h-[calc(100%-2rem)] w-[calc(100%-2rem)] rounded-full object-cover"
-              />
-            ) : (
-              <span className="absolute inset-0 grid place-items-center text-8xl font-extrabold text-white/90">
-                {initials}
-              </span>
-            )}
-          </div>
-          <div className="absolute -bottom-6 -left-4 hidden sm:block lg:-left-16">
-            <CodeCard />
-          </div>
-        </motion.div>
+        
       </div>
     </section>
   )

@@ -22,8 +22,9 @@ export const pt = {
   about: {
     eyebrow: 'Sobre mim',
     title: 'Transformo problemas reais em software que funciona',
-    p1: 'Sou desenvolvedor Full Stack e gosto de participar de todas as etapas de um produto: entender o problema, modelar os dados, construir APIs robustas e entregar interfaces rápidas e acessíveis.',
-    p2: 'Já desenvolvi SaaS de gestão, arquiteturas orientadas a eventos com microsserviços, backends IoT em Go e APIs em Java, Python e Node.js. Estou sempre estudando para escrever código mais simples, testável e fácil de manter.',
+    p1: 'Desenvolvo APIs REST, aplicações web e aplicações desktop, transformando ideias em software confiável e bem estruturado. Tenho experiência prática em toda a stack: projetar e integrar APIs, modelar bancos de dados relacionais, construir interfaces, escrever testes automatizados e configurar ambientes conteinerizados com pipelines de CI/CD.',
+    p2: 'Meus projetos vão de uma plataforma de monitoramento IoT a aplicações full stack para negócios. Me importo em traduzir regras de negócio em soluções limpas, testáveis e fáceis de manter.',
+    p3: 'Sou estudante de Sistemas de Informação na Universidade Federal Rural de Pernambuco (UFRPE), com formatura prevista para 2027.',
     location: 'Localização',
     email: 'E-mail',
     languages: 'Idiomas',

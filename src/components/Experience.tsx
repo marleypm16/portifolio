@@ -22,7 +22,19 @@ function Timeline({ title, icon: Icon, items }: { title: string; icon: IconType;
             <p className="text-xs font-semibold uppercase tracking-wider text-blue-400">{item.period[lang]}</p>
             <h4 className="mt-1 text-lg font-semibold text-white">{item.title[lang]}</h4>
             <p className="text-sm text-slate-300">{item.place}</p>
-            <p className="mt-2 text-sm leading-relaxed text-slate-400">{item.description[lang]}</p>
+            {item.description && (
+              <p className="mt-2 text-sm leading-relaxed text-slate-400">{item.description[lang]}</p>
+            )}
+            {item.highlights && (
+              <ul className="mt-3 space-y-2">
+                {item.highlights.map((h) => (
+                  <li key={h.en} className="flex gap-2.5 text-sm leading-relaxed text-slate-400">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500/70" aria-hidden />
+                    <span>{h[lang]}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
             {item.tags && (
               <ul className="mt-3 flex flex-wrap gap-1.5">
                 {item.tags.map((tag) => (

@@ -33,6 +33,7 @@ export function About() {
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('about.title')}</h2>
           <p className="mt-6 leading-relaxed text-slate-400">{t('about.p1')}</p>
           <p className="mt-4 leading-relaxed text-slate-400">{t('about.p2')}</p>
+          <p className="mt-4 leading-relaxed text-slate-400">{t('about.p3')}</p>
 
           <dl className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {profile.highlights.map((h) => (

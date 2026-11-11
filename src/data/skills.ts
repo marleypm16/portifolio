@@ -21,6 +21,7 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVercel,
+  SiRust,
 } from 'react-icons/si'
 import type { Localized } from './types'
 
@@ -50,6 +51,7 @@ export const skillGroups: SkillGroup[] = [
       { name: 'Python', icon: SiPython, color: '#3776AB' },
       { name: 'FastAPI', icon: SiFastapi, color: '#009688' },
       { name: 'Go', icon: SiGo, color: '#00ADD8' },
+      {name:'Rust', icon: SiRust, color: '#000000' },
     ],
   },
   {
@@ -73,6 +75,6 @@ export const heroStack: Skill[] = [
   { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
   { name: 'Java', icon: SiOpenjdk, color: '#F89820' },
   { name: 'Python', icon: SiPython, color: '#3776AB' },
-  { name: 'Go', icon: SiGo, color: '#00ADD8' },
+  { name: 'Rust', icon: SiRust, color: '#000000' },
   { name: 'PostgreSQL', icon: SiPostgresql, color: '#4169E1' },
 ]

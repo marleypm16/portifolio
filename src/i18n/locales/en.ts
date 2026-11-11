@@ -24,8 +24,9 @@ export const en: Translation = {
   about: {
     eyebrow: 'About me',
     title: 'I turn real problems into software that works',
-    p1: 'I am a Full Stack developer who enjoys being part of every stage of a product: understanding the problem, modeling the data, building robust APIs and shipping fast, accessible interfaces.',
-    p2: "I've built management SaaS products, event-driven microservice architectures, IoT backends in Go and APIs in Java, Python and Node.js. I keep learning so I can write code that is simpler, testable and easy to maintain.",
+    p1: 'I build REST APIs, web applications and desktop applications, turning ideas into reliable, well-structured software. I have hands-on experience across the stack: designing and integrating APIs, modeling relational databases, building user interfaces, writing automated tests and setting up containerized environments with CI/CD pipelines.',
+    p2: 'My projects range from an IoT monitoring platform to full-stack business applications. I care about translating business rules into solutions that are clean, testable and easy to maintain.',
+    p3: "I'm an Information Systems student at the Federal Rural University of Pernambuco (UFRPE), expected to graduate in 2027.",
     location: 'Location',
     email: 'Email',
     languages: 'Languages',
